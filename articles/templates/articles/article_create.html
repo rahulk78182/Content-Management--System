@@ -1,0 +1,28 @@
+{% extends 'base_layout.html' %}
+
+	{% block content %}
+	<style>
+		label{
+			padding: 7px;
+		}
+		textarea{
+			height: 200;
+		}
+	</style>
+
+		<div class="create-article">
+			<h2 style="text-align: center;">Create an Awesome Article</h2>
+			<div  style=" border: 1px solid black; width: 50%; margin-left: 25%;
+			">
+				<form class="" action="{% url 'articles:create' %}" method="post" enctype="multipart/form-data" 
+				style="display: flex; flex-direction: column; padding: 10px;">
+					{% csrf_token %}
+	
+					{{ form }}
+					<input style="width: 20%; margin-top: 10px; margin-left:40%;" type="submit" name="" value="Create">
+				</form>
+			</div>
+			
+		</div>
+
+	{% endblock %}

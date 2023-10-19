@@ -1,0 +1,18 @@
+{% extends 'base_layout.html' %}
+
+	{% block content %}
+
+		<div class="d-flex justify-content-center">
+			
+			<form class="site-form" action="{% url 'accounts:login' %}" method="post">
+				<h1 class="text-center">Log In</h1>
+				{% csrf_token %}
+					{{ form }}
+						{% if request.GET.next %}
+							<input type="hidden" name="next" value="{{request.GET.next}}">
+						{% endif %}
+					<input type="submit" name="Log In">
+			</form>
+		</div>
+
+	{% endblock %}

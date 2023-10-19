@@ -1,0 +1,27 @@
+
+
+	
+
+		{% extends 'base_layout.html' %}
+		{% block content %}
+		<style>
+			#mysign_formdiv form span{
+				/* display: none; */
+			}
+			#id_username,#id_password1{
+				margin-left: 18%;
+			}
+		</style>
+		<div id="mysign_formdiv" class="d-flex justify-content-center " style="align-items: flex-start; margin-top: 10%;" >
+		    <form  action="/accounts/signup/" method="post" style="border: 1px solid black;">
+				<h1 style="text-align: center;  color: aqua;">Sign Up</h1>
+				{% csrf_token %}
+				{{ form }}
+				<input style="text-align: center;margin-left: 41%;
+				margin-bottom: 7%; " type="submit" name="Sign Up">
+			</form>
+			
+		</div>
+		{% endblock %}
+
+	
