@@ -5,7 +5,7 @@ In this Content-managmen-system Project  . We Can Crseate Article  with title im
 Front Page of Site
 ![image](https://github.com/rahulk78182/Content-Management--System/assets/147384605/6c871f06-4508-4a17-add1-c3e5556627b3)
 Login and Signup pages below
-![image](https://github.com/rahulk78182/Content-Management--System/assets/147384605/098fba08-1418-4d95-9d48-9baef1f5f571
+![image](https://github.com/rahulk78182/Content-Management--System/assets/147384605/098fba08-1418-4d95-9d48-9baef1f5f571)
 Article Creation Page Above Mentioned 
 ![image](https://github.com/rahulk78182/Content-Management--System/assets/147384605/fceab862-8749-4c0d-b2a9-5ad76d282657)
 
